@@ -1,3 +1,29 @@
 body {
+  font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: rockwell;
+  src: url("font/mrockwell-italic.woff");
+}
+.logo {
+  font-family: rockwell;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #336279;
+}
+.parallelogram-one {
+  width: 150px;
+  height: 100px;
   background: #f00;
+}
+.parallelogram-one -webkit-transform skew(20deg) -moz-transform skew(20deg) {
+  -o-transform: skew(20deg);
+}
+.parallelogram-two {
+  width: 150px;
+  height: 100px;
+  background: #008000;
+}
+.parallelogram-two -webkit-transform skew(20deg) -moz-transform skew(20deg) {
+  -o-transform: skew(20deg);
 }
