@@ -1,29 +1,68 @@
+/*COMPONENTES*/
 body {
+  background: #fafafa;
   font-family: 'Poppins', sans-serif;
 }
 @font-face {
   font-family: rockwell;
   src: url("font/mrockwell-italic.woff");
 }
+.cabecalho {
+  background: #000;
+}
 .logo {
   font-family: rockwell;
   text-transform: uppercase;
   font-size: 50px;
+  font-weight: 700;
   color: #336279;
+}
+.menu #icone-menu {
+  width: 18px;
+  height: 34px;
+  fill: #dec554;
+}
+.menu .titulo-menu {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0;
+  color: #dec554;
+}
+.pesquisar #busca {
+  width: 53px;
+  height: 53px;
+  fill: #dec554;
+}
+.sacola #carrinho {
+  width: 53px;
+  height: 53px;
+  fill: #336279;
+}
+.sacola .quantidade {
+  color: #336279;
+  font-size: 16px;
 }
 .parallelogram-one {
   width: 150px;
   height: 100px;
-  background: #f00;
-}
-.parallelogram-one -webkit-transform skew(20deg) -moz-transform skew(20deg) {
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
+  background: #f00;
 }
 .parallelogram-two {
   width: 150px;
   height: 100px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
   background: #008000;
 }
-.parallelogram-two -webkit-transform skew(20deg) -moz-transform skew(20deg) {
-  -o-transform: skew(20deg);
+/*LAYOUTS*/
+.menu-principal .menu {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 36px;
+  justify-content: center;
+  align-items: center;
 }

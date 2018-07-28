@@ -1,4 +1,0 @@
-styl:
-	stylus -w css/main.styl -o main.css
-site:
-	browser-sync start --server --files "css/*.css, src/*.html"
