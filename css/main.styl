@@ -7,8 +7,7 @@ body
 	@font-face
 		font-family rockwell
 		src url(font/mrockwell-italic.woff)
-.cabecalho
-	background black
+
 
 .logo
 	font-family rockwell
@@ -60,10 +59,22 @@ body
 	background green
 
 /*LAYOUTS*/
+.cabecalho
+	.menu-principal
+		display flex
+		flex-flow row wrap
+		align-items center
+
 .menu-principal
+	.logo
+		margin-right 64px
+		flex 0 0 173px
 	.menu
 		display flex
 		flex-flow row wrap
 		max-width 36px
 		justify-content center
 		align-items center
+	.pesquisa
+	.sacola
+		justify-content flex-end
