@@ -1,5 +1,7 @@
-/*COMPONENTES*/
-
+/*
+* Base
+* Estilo base do elementos do Html
+*/
 body
 	background #FAFAFA
 	font-family 'Poppins', sans-serif
@@ -8,14 +10,51 @@ body
 		font-family rockwell
 		src url(font/mrockwell-italic.woff)
 
+/**
+* Mixin - Font-weight
+*/
+light = 300
+regular = 400
+medium = 500
+semibold = 600
+bold = 700
 
-.logo
-	font-family rockwell
-	text-transform uppercase
-	font-size 50px
-	font-weight 700
-	color #336279
+/**
+* Mixin - Viewport
+*/
+viewport = 1640px
 
+/**
+* Mixin - Responsive
+* @media (max-width screen-sm-min)
+* @media (max-width screen-md-min)
+* @media (max-width screen-lg-min)
+*/
+// Smaller devices (phones, 320px and down)
+screen-xs = 320px
+// Small devices (phones, 568px and down)
+screen-xs = 568px
+// Small devices (tablets, 768px and down)
+screen-sm = 768px
+// Medium devices (desktops, 992px and down)
+screen-md = 992px
+// Medium devices (desktops, 1200px and down)
+screen-lg = 1200px
+
+/*
+* Global
+* Elementos globais que podem ser extendidos ao longo do documento
+*/
+.container
+  min-width: 0
+  max-width: viewport
+  margin 0 auto
+  width: auto
+
+/*
+* Components
+* Componentes que se adaptam ao contexto
+*/
 .menu
 	#icone-menu
 		width 18px
@@ -24,7 +63,7 @@ body
 	.titulo-menu
 		text-transform uppercase
 		font-size 12px
-		margin 0
+		margin 1px 0 0 
 		color #DEC554
 
 .pesquisar
@@ -58,7 +97,10 @@ body
 	     -o-transform skew(20deg)
 	background green
 
-/*LAYOUTS*/
+/*
+* State
+* Estado global do Layout
+*/
 .cabecalho
 	.menu-principal
 		display flex
@@ -67,6 +109,9 @@ body
 
 .menu-principal
 	.logo
+		display flex
+		flex-flow row wrap
+		align-items center
 		margin-right 64px
 		flex 0 0 173px
 	.menu
@@ -75,6 +120,9 @@ body
 		max-width 36px
 		justify-content center
 		align-items center
-	.pesquisa
+	.pesquisar
 	.sacola
-		justify-content flex-end
+		display flex
+		flex-flow row wrap
+		width 63px
+		height 53px
