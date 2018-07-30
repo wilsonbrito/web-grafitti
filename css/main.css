@@ -1,15 +1,3 @@
-/*
-* Base
-* Estilo base do elementos do Html
-*/
-body {
-  background: #fafafa;
-  font-family: 'Poppins', sans-serif;
-}
-@font-face {
-  font-family: rockwell;
-  src: url("font/mrockwell-italic.woff");
-}
 /**
 * Mixin - Font-weight
 */
@@ -26,21 +14,33 @@ body {
 * Global
 * Elementos globais que podem ser extendidos ao longo do documento
 */
-.container #icone-menu,
-min-width: 0 #icone-menu,
-max-width: viewport #icone-menu,
-margin 0 auto #icone-menu,
-width: auto #icone-menu,
+.container {
+  min-width: 0;
+  max-width: 1640px;
+  margin: 0 auto;
+  width: auto;
+}
+/*
+* Base
+* Estilo base do elementos do Html
+*/
+body {
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: rockwell;
+  src: url("font/mrockwell-italic.woff");
+}
+/*
+* Components
+* Componentes que se adaptam ao contexto
+*/
 .menu #icone-menu {
   width: 18px;
   height: 34px;
   fill: #dec554;
 }
-.container .titulo-menu,
-min-width: 0 .titulo-menu,
-max-width: viewport .titulo-menu,
-margin 0 auto .titulo-menu,
-width: auto .titulo-menu,
 .menu .titulo-menu {
   text-transform: uppercase;
   font-size: 12px;
@@ -64,18 +64,18 @@ width: auto .titulo-menu,
 .parallelogram-one {
   width: 150px;
   height: 100px;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
   background: #f00;
+}
+.parallelogram-one -webkit-transform skew(20deg) -moz-transform skew(20deg) {
+  -o-transform: skew(20deg);
 }
 .parallelogram-two {
   width: 150px;
   height: 100px;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
   background: #008000;
+}
+.parallelogram-two -webkit-transform skew(20deg) -moz-transform skew(20deg) {
+  -o-transform: skew(20deg);
 }
 /*
 * State
