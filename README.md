@@ -1,3 +1,5 @@
+![alt text](https://github.com/wilsonbrito/web-grafitti/blob/master/0.png)
+
 Um projeto pessoal cujo a ideia é que o sapato que está em SVG troque de cor, conforme for clicando nas opções. Mas não irá trocar somente a cor, como também o preço e caso clique no adicionar carrinho irá adicionar a quantidade. 
 
 No menu de três opções de sapatos, ao clicar no produto, irá trocar o SVG e seus respectivos valores de acordo com a opção escolhida. 
