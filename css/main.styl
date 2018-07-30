@@ -101,18 +101,25 @@ body
 * State
 * Estado global do Layout
 */
+body
+	.cabecalho
+	.conteudo
+	.rodape
+		@extend .container
+
 .cabecalho
 	.menu-principal
 		display flex
 		flex-flow row wrap
 		align-items center
+		justify-content space-between
 
 .menu-principal
 	.logo
 		display flex
 		flex-flow row wrap
 		align-items center
-		margin-right 64px
+		margin-right 28px
 		flex 0 0 173px
 	.menu
 		display flex
@@ -126,3 +133,7 @@ body
 		flex-flow row wrap
 		width 63px
 		height 53px
+	.pesquisar
+		justify-content flex-end
+		flex 1 1 auto
+		margin-right 100px
