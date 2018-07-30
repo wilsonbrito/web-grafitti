@@ -19,7 +19,7 @@ body .cabecalho,
 body .conteudo,
 body .rodape {
   min-width: 0;
-  max-width: 1640px;
+  max-width: 1170px;
   margin: 0 auto;
   width: auto;
 }
@@ -94,7 +94,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin-right: 28px;
+  margin-right: 40px;
   flex: 0 0 173px;
 }
 .menu-principal .menu {
@@ -114,5 +114,5 @@ body {
 .menu-principal .pesquisar {
   justify-content: flex-end;
   flex: 1 1 auto;
-  margin-right: 100px;
+  margin-right: 60px;
 }
