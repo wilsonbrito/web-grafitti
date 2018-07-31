@@ -72,6 +72,10 @@ body {
 .parallelogram-one -webkit-transform skew(20deg) -moz-transform skew(20deg) {
   -o-transform: skew(20deg);
 }
+.produto #sapato {
+  max-width: 359px;
+  height: auto;
+}
 .parallelogram-two {
   width: 150px;
   height: 100px;
