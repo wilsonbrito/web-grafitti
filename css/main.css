@@ -60,39 +60,43 @@ body {
   color: #336279;
   font-size: 16px;
 }
-.produto:before {
+.bloco-produto {
+  position: relative;
+  height: 600px;
+}
+.bloco-produto:before {
+  position: absolute;
   content: '';
   display: block;
-  width: 764px;
+  width: 377px;
+  height: 535px;
+  background: #ed583c;
+  transform: skew(-30deg);
+  z-index: -1;
+}
+.bloco-produto:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 377px;
   height: 535px;
   background: #a6c9db;
-  transform: skew(-32deg);
+  transform: skew(-30deg);
+  z-index: -1;
 }
 .produto #sapato {
-  max-width: 359px;
+  max-width: 594px;
   height: auto;
   font-weight: 700;
+}
+.titulo-produto {
+  font-size: 30px;
+  color: #336279;
 }
 .preco {
   font-size: 40px;
   font-weight: 500;
   color: #fafafa;
-}
-.parallelogram-two {
-  width: 150px;
-  height: 100px;
-  background: #008000;
-}
-.parallelogram-two -webkit-transform skew(20deg) -moz-transform skew(20deg) {
-  -o-transform: skew(20deg);
-}
-.parallelogram-one {
-  width: 150px;
-  height: 100px;
-  background: #f00;
-}
-.parallelogram-one -webkit-transform skew(20deg) -moz-transform skew(20deg) {
-  -o-transform: skew(20deg);
 }
 /*
 * State
@@ -129,8 +133,4 @@ body {
   justify-content: flex-end;
   flex: 1 1 auto;
   margin-right: 60px;
-}
-.titulo-produto {
-  font-size: 30px;
-  color: #336279;
 }

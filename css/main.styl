@@ -77,39 +77,43 @@ body
 		color #336279
 		font-size 16px
 
-.produto
+.bloco-produto
+	position relative
+	height 600px
 	&:before
+		position absolute
 		content ''
 		display block
-		width 764px
+		width 377px
+		height 535px
+		background #ED583C
+		transform skew(-30deg)
+		z-index -1
+	&:after
+		position absolute
+		content ''
+		display block
+		width 377px
 		height 535px
 		background #A6C9DB
-		transform skew(-32deg)
+		transform skew(-30deg)
+		z-index -1
+
+.produto
 	#sapato
-		max-width 359px
+		max-width 594px
 		height auto
 		font-weight bold
+
+.titulo-produto
+	font-size 30px
+	color #336279
 
 .preco
 	font-size 40px
 	font-weight medium
 	color #FAFAFA
 
-.parallelogram-two
-	width 150px
-	height 100px
-	-webkit-transform skew(20deg)
-	   -moz-transform skew(20deg)
-	     -o-transform skew(20deg)
-	background green
-
-.parallelogram-one
-	width 150px
-	height 100px
-	-webkit-transform skew(20deg)
-	   -moz-transform skew(20deg)
-	     -o-transform skew(20deg)
-	background red
 /*
 * State
 * Estado global do Layout
@@ -150,7 +154,3 @@ body
 		justify-content flex-end
 		flex 1 1 auto
 		margin-right 60px
-
-.titulo-produto
-	font-size 30px
-	color #336279
