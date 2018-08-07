@@ -46,10 +46,6 @@ screen-lg = 1200px
 body
 	background #FAFAFA
 	font-family 'Poppins', sans-serif
-
-	@font-face
-		font-family rockwell
-		src url(font/mrockwell-italic.woff)
 		
 /*
 * Components
@@ -81,18 +77,24 @@ body
 		color #336279
 		font-size 16px
 
-.parallelogram-one
-	width 150px
-	height 100px
-	-webkit-transform skew(20deg)
-	   -moz-transform skew(20deg)
-	     -o-transform skew(20deg)
-	background red
-
 .produto
+	&:before
+		content ''
+		display block
+		width 764px
+		height 535px
+		background #A6C9DB
+		transform skew(-32deg)
 	#sapato
 		max-width 359px
 		height auto
+		font-weight bold
+
+.preco
+	font-size 40px
+	font-weight medium
+	color #FAFAFA
+
 .parallelogram-two
 	width 150px
 	height 100px
@@ -101,6 +103,13 @@ body
 	     -o-transform skew(20deg)
 	background green
 
+.parallelogram-one
+	width 150px
+	height 100px
+	-webkit-transform skew(20deg)
+	   -moz-transform skew(20deg)
+	     -o-transform skew(20deg)
+	background red
 /*
 * State
 * Estado global do Layout
@@ -141,3 +150,7 @@ body
 		justify-content flex-end
 		flex 1 1 auto
 		margin-right 60px
+
+.titulo-produto
+	font-size 30px
+	color #336279
