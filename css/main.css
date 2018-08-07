@@ -63,29 +63,34 @@ body {
 .bloco-produto {
   position: relative;
   height: 600px;
+  border: 1px solid #f00;
 }
 .bloco-produto:before {
   position: absolute;
   content: '';
   display: block;
-  width: 377px;
+  width: 426px;
   height: 535px;
-  background: #ed583c;
-  transform: skew(-30deg);
+  background: #a6c9db;
+  transform: skew(-30deg) translate3d(-55%, -50%, 0);
+  top: 55%;
+  left: 50%;
   z-index: -1;
 }
 .bloco-produto:after {
   position: absolute;
   content: '';
   display: block;
-  width: 377px;
+  width: 426px;
   height: 535px;
-  background: #a6c9db;
-  transform: skew(-30deg);
-  z-index: -1;
+  background: #ed583c;
+  transform: skew(-30deg) translate3d(-24%, -24%, 0);
+  top: 24%;
+  left: 24%;
+  z-index: -2;
 }
 .produto #sapato {
-  max-width: 594px;
+  width: 594px;
   height: auto;
   font-weight: 700;
 }
@@ -133,4 +138,9 @@ body {
   justify-content: flex-end;
   flex: 1 1 auto;
   margin-right: 60px;
+}
+.conteudo .bloco-produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

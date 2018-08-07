@@ -80,28 +80,33 @@ body
 .bloco-produto
 	position relative
 	height 600px
+	border 1px solid red
 	&:before
 		position absolute
 		content ''
 		display block
-		width 377px
+		width 426px
 		height 535px
-		background #ED583C
-		transform skew(-30deg)
+		background #A6C9DB
+		transform skew(-30deg) translate3d(-55%,-50%,0)
+		top 55%
+		left 50%
 		z-index -1
 	&:after
 		position absolute
 		content ''
 		display block
-		width 377px
+		width 426px
 		height 535px
-		background #A6C9DB
-		transform skew(-30deg)
-		z-index -1
+		background #ED583C
+		transform skew(-30deg) translate3d(-24%,-24%,0)
+		top 24%
+		left 24%
+		z-index -2
 
 .produto
 	#sapato
-		max-width 594px
+		width 594px
 		height auto
 		font-weight bold
 
@@ -154,3 +159,9 @@ body
 		justify-content flex-end
 		flex 1 1 auto
 		margin-right 60px
+
+.conteudo
+	.bloco-produto
+		display flex
+		justify-content center
+		align-items center
