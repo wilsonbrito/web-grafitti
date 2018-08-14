@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "stylus": "stylus -w css/main.styl -o css/main.css",
-        "web": "browser-sync start --server --files 'css/*.css, *.html'" 
+        "css": "stylus -w css/main.styl -o css/main.css",
+        "site": "browser-sync start --server --files 'css/*.css, *.html'" 
     }
 }

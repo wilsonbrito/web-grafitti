@@ -78,9 +78,6 @@ body
 		font-size 16px
 
 .bloco-produto
-	position relative
-	height 600px
-	border 1px solid red
 	&:before
 		position absolute
 		content ''
@@ -103,6 +100,16 @@ body
 		top 24%
 		left 24%
 		z-index -2
+
+.cor
+	span
+		font-size 14px
+		font-weight medium
+		color #336279
+	.cores
+		input 
+			width 43px
+			height 43px
 
 .produto
 	#sapato
@@ -161,7 +168,12 @@ body
 		margin-right 60px
 
 .conteudo
+	.cor
+		display flex
+		align-items center
 	.bloco-produto
+		position relative
+		height 600px
 		display flex
 		justify-content center
 		align-items center

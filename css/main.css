@@ -60,11 +60,6 @@ body {
   color: #336279;
   font-size: 16px;
 }
-.bloco-produto {
-  position: relative;
-  height: 600px;
-  border: 1px solid #f00;
-}
 .bloco-produto:before {
   position: absolute;
   content: '';
@@ -88,6 +83,15 @@ body {
   top: 24%;
   left: 24%;
   z-index: -2;
+}
+.cor span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #336279;
+}
+.cor .cores input {
+  width: 43px;
+  height: 43px;
 }
 .produto #sapato {
   width: 594px;
@@ -139,7 +143,13 @@ body {
   flex: 1 1 auto;
   margin-right: 60px;
 }
+.conteudo .cor {
+  display: flex;
+  align-items: center;
+}
 .conteudo .bloco-produto {
+  position: relative;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
